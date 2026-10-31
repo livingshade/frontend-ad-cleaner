@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "知乎推广替换",
+  "version": "1.0.3",
+  "description": "把知乎推广、广告和盐选卡片显示为“广告”，保留链接；隐藏航海家标记，保留赞同人数和按钮。",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.zhihu.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B站推广替换 · 效果演示</title>
+  <link rel="stylesheet" href="../extension/content.css">
+  <link rel="stylesheet" href="preview.css">
+  <script src="../extension/content.js" defer></script>
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">B站推广替换 / 示例内容</div>
+    <h1>推广视频，一眼看清。</h1>
+    <p class="intro">封面替换为占位图，标题统一显示「广告」。普通视频照常浏览。</p>
+    <section class="grid" aria-label="视频卡片示例">
+      <article class="bili-video-card">
+        <div class="bili-video-card__wrap">
+          <a href="#ordinary" class="cover-link" aria-label="打开普通视频示例"><div class="bili-video-card__image"><div class="demo-cover landscape">WEEKEND<br><small>城市慢游记</small></div><span class="duration">08:32</span></div></a>
+          <h3 class="bili-video-card__info--tit" title="周末带你散步，看看城市的另一面"><a href="#ordinary">周末带你散步，看看城市的另一面</a></h3>
+          <p class="meta">普通视频 · 保留原样</p>
+        </div>
+      </article>
+      <article class="bili-video-card">
+        <div class="bili-video-card__wrap">
+          <a href="#promoted" class="cover-link" aria-label="打开推广视频示例"><div class="bili-video-card__image"><div class="demo-cover sale">原推广封面</div><span class="duration">01:20</span></div></a>
+          <h3 class="bili-video-card__info--tit" title="示例推广视频的原标题"><a href="#promoted">示例推广视频的原标题</a></h3>
+          <p class="meta"><span class="bili-video-card__info--ad">推广</span> 平台已有推广标识</p>
+        </div>
+      </article>
+      <article class="bili-video-card">
+        <div class="bili-video-card__wrap">
+          <a href="#design" class="cover-link" aria-label="打开广告设计教程示例"><div class="bili-video-card__image"><div class="demo-cover design">DESIGN<br><small>版式与文字</small></div><span class="duration">12:06</span></div></a>
+          <a href="#design"><h3 class="bili-video-card__info--tit" title="广告设计教程：如何让排版更清晰">广告设计教程：如何让排版更清晰</h3></a>
+          <p class="meta">标题含「广告」· 不会误替换</p>
+        </div>
+      </article>
+    </section>
+    <div class="actions"><button id="add">模拟加载一条新推广</button><button id="recycle">把推广卡片换成普通视频</button></div>
+    <p class="note">这是使用扩展实际代码的本地演示，不是 B 站截图。点击卡片仍会沿原链接跳转。</p>
+  </main>
+</body>
+</html>

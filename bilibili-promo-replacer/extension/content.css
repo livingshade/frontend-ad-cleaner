@@ -1,0 +1,49 @@
+/* Keep the original cover's dimensions and its parent link. */
+.bpl-cover {
+  position: relative !important;
+  background: #fff1f3 !important;
+}
+
+.bpl-cover > :not(.bpl-placeholder),
+.bpl-cover > :not(.bpl-placeholder) * {
+  visibility: hidden !important;
+}
+
+.bpl-cover > .bpl-placeholder {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 10 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 8px !important;
+  border: 2px solid #f3b0bd !important;
+  border-radius: inherit !important;
+  background: repeating-linear-gradient(135deg, #fff1f3 0 18px, #ffe7ec 18px 36px) !important;
+  color: #b42345 !important;
+  font: 800 clamp(18px, 2.2vw, 32px)/1.2 system-ui, "Microsoft YaHei", sans-serif !important;
+  letter-spacing: .18em !important;
+  text-indent: .18em !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none !important;
+}
+
+.bpl-title,
+.bpl-title a {
+  color: #b42345 !important;
+  font-weight: 700 !important;
+}
+
+/* The program card's link is inside the cover container. Keep its hit area. */
+.floor-single-card .bpl-cover > a {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.floor-single-card.bpl-program .sub-title {
+  visibility: hidden !important;
+}

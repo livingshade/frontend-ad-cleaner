@@ -1,0 +1,65 @@
+/* Scope is enforced by manifest.json: Zhihu pages only. */
+[data-zclean-hidden] {
+  display: none !important;
+}
+
+[data-zclean-promo] {
+  display: block !important;
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  padding: 0 !important;
+  background: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+}
+
+[data-zclean-promo] > :not([data-zclean-placeholder]),
+[data-zclean-promo]::before,
+[data-zclean-promo]::after {
+  display: none !important;
+}
+
+[data-zclean-placeholder] {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 80px !important;
+  padding: 16px !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 6px !important;
+  background: #f4f5f7 !important;
+  color: #7b8190 !important;
+  font: 500 16px/1.5 system-ui, -apple-system, "Microsoft YaHei", sans-serif !important;
+  text-decoration: none !important;
+  letter-spacing: .15em !important;
+}
+
+a[data-zclean-placeholder]:hover { background: #e9ebef !important; }
+a[data-zclean-placeholder]:focus-visible { outline: 2px solid #1772f6 !important; outline-offset: -3px !important; }
+
+@media (prefers-color-scheme: dark) {
+  [data-zclean-placeholder] { background: #24262b !important; border-color: #3c4047 !important; color: #a9adb6 !important; }
+  a[data-zclean-placeholder]:hover { background: #30343a !important; }
+}
+
+/* Keep the original live count available for each DOM rescan. */
+[data-zclean-sailor-count] {
+  font-size: 0 !important;
+  color: transparent !important;
+}
+[data-zclean-sailor-count] > *,
+[data-zclean-sailor-count]::after {
+  display: none !important;
+}
+[data-zclean-sailor-count]::before {
+  content: attr(data-zclean-sailor-count) !important;
+  display: inline !important;
+  color: #8590a6 !important;
+  font: 14px/1.5 system-ui, -apple-system, sans-serif !important;
+  letter-spacing: normal !important;
+}

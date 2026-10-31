@@ -1,0 +1,23 @@
+Verification — version 1.2.0 — 2026-10-30
+
+25/25 automated DOM behavior tests pass; ESLint complexity threshold 10 passes.
+The installed content.js and content.css are copied from the tested source.
+
+Promotions: current signed-in homepage uses cover-level ad text or a new icon.
+Primary cover/title ad links use cm.bilibili.com/cm/api/fees/pc/sync/.
+These and the older disclosure classes are handled without guessing from titles.
+Version 1.1.0 was verified live: 11 ads replaced and 13 program cards hidden.
+
+Final version 1.2.0 follows the revised user preference: program cards now keep
+positions and links, replacing covers and titles with 广告：<category>.
+Supported observed badge values: 直播, 番剧, 国创, 综艺, 课堂, 电影, 电视剧,
+纪录片, 漫画. This is a user-selected label, not a claim that all are paid ads.
+Category subtitles are visually suppressed. Ordinary videos are unchanged.
+
+Tests cover old/new disclosures, numeric stats, strict redirect matching,
+retained links, dynamic insertion, changed destinations, stale text, detached
+nodes, all nine categories, badge changes and restoration to ordinary content.
+
+1.2.0 files are in the installed directory. Final real-page visual verification
+is pending the user's extension reload and page refresh. Browser automation
+cannot open chrome:// URLs. No permissions or domains were added.

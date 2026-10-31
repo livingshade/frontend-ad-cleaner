@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "B站推广替换",
+  "version": "1.2.0",
+  "description": "推广视频显示广告；直播、番剧、漫画、课堂等推荐的封面和标题显示广告：类别，保留原链接。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bilibili.com/*",
+        "https://search.bilibili.com/*"
+      ],
+      "css": [
+        "extension/content.css"
+      ],
+      "js": [
+        "extension/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.cache/
+coverage/
+dist/
+build/
+*.log
+.env
+.env.*
+!.env.example
+zhihu-cleaner/tests/latest-results.json

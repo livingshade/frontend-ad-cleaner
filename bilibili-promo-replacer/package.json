@@ -1,0 +1,14 @@
+{
+  "name": "bilibili-promo-replacer",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Replace explicitly promoted Bilibili video covers and titles locally.",
+  "scripts": {
+    "test": "node --test tests/content.test.cjs",
+    "lint": "eslint extension/content.js --max-warnings=0"
+  },
+  "devDependencies": {
+    "eslint": "10.14.0",
+    "jsdom": "30.1.3"
+  }
+}
